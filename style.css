@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6f5;
+    color: #202b30;
+}
+
+header {
+    height: 70px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #202b30;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: #159bd3;
+}
+
+.shop-btn,
+.hero button,
+.section-title button,
+.about button,
+.product-card button,
+.contact button {
+    border: none;
+    background: #19a8e5;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.hero {
+    min-height: 430px;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero-text {
+    width: 450px;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 30px;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero-circle {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #1ca8e4;
+    border-radius: 50%;
+}
+
+.hero-bottle-left {
+    position: absolute;
+    left: 8%;
+    bottom: 35px;
+    width: 65px;
+}
+
+.hero-bottle-right {
+    position: absolute;
+    right: 8%;
+    bottom: 30px;
+    width: 75px;
+}
+
+.features {
+    min-height: 350px;
+    background: #202c31;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.feature-image {
+    width: 55%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.feature-content {
+    width: 45%;
+    padding: 35px;
+    color: white;
+}
+
+.feature {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.feature i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    color: #202c31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.feature h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    font-size: 9px;
+    color: #c5c9ca;
+    line-height: 1.5;
+}
+
+.products {
+    padding: 45px 7%;
+    background: #f5f6f5;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-title h2 {
+    font-size: 22px;
+}
+
+.section-title p {
+    font-size: 10px;
+    margin-top: 5px;
+    color: #666;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.product-card {
+    background: white;
+    padding: 8px;
+    border-radius: 7px;
+    text-align: left;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 11px;
+    margin: 8px 5px 3px;
+}
+
+.product-card p {
+    font-size: 10px;
+    margin: 0 5px 8px;
+}
+
+.product-card button {
+    font-size: 7px;
+    padding: 6px 12px;
+    margin-left: 5px;
+}
+
+.about {
+    min-height: 300px;
+    background: #202c31;
+    color: white;
+    padding: 50px 7%;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: #bfc5c7;
+    font-size: 10px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.about-points {
+    width: 40%;
+}
+
+.about-points div {
+    background: rgba(255,255,255,0.08);
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.about-points span {
+    color: #20aae4;
+    font-size: 12px;
+}
+
+.about-points p {
+    margin: 0;
+}
+
+.faq {
+    padding: 45px 7%;
+    background: white;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.faq-box {
+    max-width: 750px;
+    margin: auto;
+}
+
+.faq-box div {
+    min-height: 55px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 20px;
+}
+
+.faq-box span {
+    color: #777;
+    font-size: 11px;
+}
+
+.faq-box p {
+    flex: 1;
+    font-size: 11px;
+}
+
+.faq-box i {
+    font-size: 9px;
+    color: #19a8e5;
+}
+
+.contact {
+    padding: 50px 7%;
+    background: #f5f6f5;
+}
+
+.contact-box {
+    max-width: 450px;
+    margin: auto;
+    background: #292929;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.contact h2 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #333;
+    border: 1px solid #555;
+    color: white;
+    outline: none;
+}
+
+.contact textarea {
+    height: 80px;
+    resize: none;
+}
+
+.contact button {
+    margin-top: 5px;
+}
+
+footer {
+    background: #202c31;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 10px;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 0 15px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 9px;
+    }
+
+    .shop-btn {
+        display: none;
+    }
+
+    .hero {
+        min-height: 380px;
+    }
+
+    .hero-text {
+        width: 85%;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero-bottle-left {
+        left: 5px;
+    }
+
+    .hero-bottle-right {
+        right: 5px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-image,
+    .feature-content {
+        width: 100%;
+    }
+
+    .feature-image {
+        height: 280px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-text,
+    .about-points {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .product-card img {
+        height: 120px;
+    }
+
+    nav {
+        gap: 7px;
+    }
+
+    nav a {
+        font-size: 8px;
+    }
+}
